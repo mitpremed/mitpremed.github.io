@@ -420,6 +420,9 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .cpw_container {
+  flex: 1 1 auto;
+  overflow-x: scroll;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -432,10 +435,13 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .cpw_container iframe{
   margin: 20px;
+  width: 100%;
 }
 
 .cpw_container img {
   margin: 20px;
+  width: 100%;
+  height: auto;
 }
 
 /**Events Page**/
