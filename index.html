@@ -19,17 +19,18 @@
         </style>
     </head>
     <body>
-        <p id="text"></p>
+        <!-- <p id="text"></p>
         <script type="text/javascript">
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|Mobile|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent);
             var element = document.getElementById('text');
             if (isMobile) {
                   element.innerHTML = "You are using Mobile";
             } else {
                 element.innerHTML = "You are using Desktop";
             }
-        </script>
+        </script> -->
 
+        
         <div class="navBar">
             <div class="navBarTitle">MIT Pre-Medical Society <i class="fas fa-heartbeat"></i></div>
             <div class="navBarItems">
@@ -40,6 +41,22 @@
                 <div><a class="navLink" href="cpw">CP* 2020</a></div>    
             </div> 
         </div>
+
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="index"><li>Home</li></a>
+                <a href="about-us"><li>About Us</li></a>
+                <a href="guide"><li>Pre-Med Guide</li></a>
+                <a href="events"><li>Events</li></a>
+                <a href="cpw"><li>CP* 2020</li></a>   
+              </ul>
+            </div>
+          </nav>
 
         <div class="otherLinks">
             <div class="sectionTitle">
