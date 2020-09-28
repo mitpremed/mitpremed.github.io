@@ -235,8 +235,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 #mobileLogo {
   position: fixed;
-  right: 20px;
-  top: 20px;
+  right: 25px;
+  top: 25px;
 
 }
 
@@ -316,9 +316,14 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .aboutUsContainer {
   text-align: center;
   width: 100vw;
-  height: 80vh;
   padding-top: 10vh;
   /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+
+  align-items: center;
+  height: fit-content;
+  padding: 2vw;
+  margin-bottom: 20px;
   overflow-x: hidden;
 }
 
@@ -382,6 +387,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-left: 10vw;
   /* overflow-y: scroll; */
   text-align: center;
+  overflow-x: hidden;
 }
 
 .pdf_container {
@@ -411,11 +417,15 @@ body, p, h1, h2, h3, h4, h5, h6 {
   height: fit-content;
   padding: 2vw;
   margin-bottom: 20px;
-  
+
+  overflow-x: hidden;
   
 }
 
 .cpw_container {
+  flex: 1 1 auto;
+  overflow-x: scroll;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -428,10 +438,13 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .cpw_container iframe{
   margin: 20px;
+  width: 100%;
 }
 
 .cpw_container img {
   margin: 20px;
+  width: 100%;
+  height: auto;
 }
 
 /**Events Page**/
@@ -442,8 +455,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-top: 5vh;
   padding-bottom: 10vh;
   /* overflow-y: scroll; */
-  height: 85vh;
-  padding-bottom: 10vh;
+  align-items: center;
+  height: fit-content;
+
+  overflow-x: hidden;
 }
 
 .events_container {
