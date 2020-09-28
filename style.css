@@ -26,11 +26,14 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /* NavBar */
 
 .navBar {
+  position: sticky;
+  top: 0;
   width: 96vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2vw;
+  background-color: white;
 }
 
 .navBarTitle {
