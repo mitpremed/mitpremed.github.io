@@ -503,7 +503,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .dph_container {
-  width: 100%;
+  width: 80vw;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -523,6 +523,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   border-width: 1px;
   border-color: black;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .dph_box h3 {
