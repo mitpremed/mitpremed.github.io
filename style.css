@@ -490,3 +490,41 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-size: 40px;
   font-weight: 100;
 }
+
+/** DPH Lite Page **/
+.dphContainer {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  padding-bottom: 10vh;
+  align-items: center;
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+.dph_container {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.dph_box {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 120px;
+  height: 200px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 20px;
+}
+
+.dph_box h3 {
+  margin-bottom: 15px;
+}
