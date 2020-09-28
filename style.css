@@ -406,7 +406,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .pdf_container iframe {
   height: 75vh;
-  width: 75vw;
+  width: 50vw;
 }
 
 
