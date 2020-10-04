@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: crimson;
+  color: #1ca5d4;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .navBarTitle i {
-  color: crimson;
+  color: #1ca5d4;
 }
 
 .navBarItems {
@@ -70,7 +70,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .navLinkActive {
   text-decoration: none;
-  color: crimson;
+  color: #1ca5d4;
 }
 
 .navLink {
@@ -261,12 +261,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
   position: relative;
   height: 30px;
   /* bottom: 0; */
-  font-size: 10px;
+  font-size: 15px;
   background-color: white;
   padding-top: 30px;
   margin-bottom: 30px;
   line-height: 12px;
-  color: crimson;
+  color: #1ca5d4;
   text-align: center;
 }
 
