@@ -157,7 +157,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: 1ca5d4;
 }
 
 
@@ -558,6 +558,89 @@ body, p, h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
 }
 
+.events_widget {
+    width: 200px;
+    height: 200px;
+    background: #1ca5d4;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.events_widget:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #1ca5d4;
+    border-top: 10px solid #1ca5d4;
+    border-bottom: 10px solid transparent;
+    right: 19px;
+    bottom: -19px;
+}
+
+.events_widget strong{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.7em;
+  font-size: 2em;
+  color: #fff;
+  text-align: left;
+}
+
+.events_widget span{
+  font-size: 10em;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  padding: 0.1em;
+  color: #fff;
+}
+
+.events_info {
+  border:2px solid #1ca5d4;
+  width: 196px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  vertical-align: middle;
+}
+
+.events_info strong{
+  font-size: 22px;
+}
+
+.events_info span{
+  font-style: italic;
+}
+
+.past_event {
+  background-color: gray;
+}
+
+.past_event:before{
+  border-right: 10px solid gray;
+  border-top: 10px solid gray;
+}
+
+.past_info {
+  border:2px solid gray;
+  color: gray;
+}
+
+.past_info strong{
+  font-size: 18px;
+}
+
+.past_info p{
+  font-size: 12px;
+}
+
 .events_container {
   margin-top: 3vh;
   display: flex;
@@ -578,7 +661,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   justify-content: space-evenly;
   width: 300px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-right: 20px;
 }
 
