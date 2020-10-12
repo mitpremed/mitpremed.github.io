@@ -68,7 +68,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 
-.navLinkActive {
+.navBar .navLinkActive {
   text-decoration: none;
   color: #1ca5d4;
   margin-left: 2vw;
