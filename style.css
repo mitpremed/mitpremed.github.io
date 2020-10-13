@@ -559,6 +559,22 @@ body, p, h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
 }
 
+.event_year {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 4em;
+  letter-spacing: 10px;
+  color: black;
+}
+
 .events_widget {
     width: 200px;
     height: 200px;
