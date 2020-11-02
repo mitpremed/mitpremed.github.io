@@ -141,9 +141,9 @@ body, p, h1, h2, h3, h4, h5, h6 {
   top: 50px;
   left: 50px;
   margin-bottom: 100px;
-  
+
   z-index: 1;
-  
+
   -webkit-user-select: none;
   user-select: none;
 }
@@ -152,7 +152,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 {
   text-decoration: none;
   color: #232323;
-  
+
   transition: color 0.3s ease;
 }
 
@@ -170,12 +170,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: -7px;
   left: -5px;
-  
+
   cursor: pointer;
-  
+
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  
+
   -webkit-touch-callout: none;
 }
 
@@ -189,14 +189,14 @@ body, p, h1, h2, h3, h4, h5, h6 {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+
   background: #cdcdcd;
   border-radius: 3px;
-  
+
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -212,7 +212,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   transform-origin: 0% 100%;
 }
 
-/* 
+/*
  * Transform all the slices of hamburger
  * into a crossmark.
  */
@@ -251,15 +251,15 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
+
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
+
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -329,13 +329,13 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-left: 10vw;
   overflow-x: hidden;
   height: fit-content;
-  
+
 }
 
 .sectionTitle {
   font-size: 20px;
 }
- 
+
 .whatWeDoContainer {
   margin-top: 4vh;
   display: flex;
@@ -438,7 +438,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .people:hover .imgCaptionHover,
 .people:active .imgCaptionHover,
-.people:focus .imgCaptionHover 
+.people:focus .imgCaptionHover
 {
   opacity: 1;
 }
@@ -517,7 +517,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 
   overflow-x: hidden;
-  
+
 }
 
 .cpw_container {
@@ -634,6 +634,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .events_info span{
   font-style: italic;
+}
+
+.events_info p{
+  font-size: 11px;
 }
 
 .past_event {
