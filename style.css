@@ -629,7 +629,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .events_info strong{
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 0.5;
 }
 
 .events_info span{
@@ -638,6 +639,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .events_info p{
   font-size: 11px;
+  line-height: 2;
 }
 
 .past_event {
