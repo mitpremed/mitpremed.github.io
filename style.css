@@ -737,6 +737,17 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
 }
 
+/** Boston Mixer Page **/
+.mixerContainer {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  padding-bottom: 10vh;
+  align-items: center;
+  height: fit-content;
+  overflow-x: hidden;
+}
+
 
 /** Contact Page **/
 
