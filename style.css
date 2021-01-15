@@ -739,13 +739,59 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 /** Boston Mixer Page **/
 .mixerContainer {
-  width: 80vw;
+  margin-top: 0;
+  /* position: absolute; */
+  width:76vw;
   margin-left: 10vw;
-  margin-top: 5vh;
-  padding-bottom: 10vh;
   align-items: center;
+  /* overflow-y: scroll; */
+  text-align: center;
   height: fit-content;
+  padding: 2vw;
+  margin-bottom: 20px;
+
   overflow-x: hidden;
+}
+
+.mixer_header {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mixer_logo img {
+  align-items: center;
+  width: 375px;
+  object-fit: cover;
+  margin-bottom: 40px;
+
+}
+
+.mixer_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 38vw;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.mixer_container {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: left;
+  margin-bottom: 8vh;
+}
+
+hr {
+  height: 1px;
+  border-width:0;
+  color: #1ca5d4;
+  background-color: #1ca5d4;
 }
 
 
