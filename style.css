@@ -801,6 +801,10 @@ hr {
   background-color: #1ca5d4;
 }
 
+.mixer_form a:hover {
+  color: black;
+}
+
 
 /** Contact Page **/
 
