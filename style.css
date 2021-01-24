@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 html {
   overflow-y: auto;
@@ -18,7 +17,14 @@ a {
   text-decoration: none;
 }
 
-body, p, h1, h2, h3, h4, h5, h6 {
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
   padding: 0px;
 }
@@ -63,10 +69,9 @@ body, p, h1, h2, h3, h4, h5, h6 {
   padding-right: 4vw;
 }
 
-.navLink{
+.navLink {
   margin-left: 2vw;
 }
-
 
 .navBar .navLinkActive {
   text-decoration: none;
@@ -80,7 +85,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 980px) {
-  .navBar{
+  .navBar {
     display: none !important;
   }
 }
@@ -107,7 +112,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -131,11 +136,9 @@ body, p, h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-
 /* Mobile navbar menu taken from Erik Terwan https://codepen.io/erikterwan/pen/EVzeRP */
 
-#menuToggle
-{
+#menuToggle {
   display: block;
   position: relative;
   top: 50px;
@@ -148,22 +151,18 @@ body, p, h1, h2, h3, h4, h5, h6 {
   user-select: none;
 }
 
-#menuToggle a
-{
+#menuToggle a {
   text-decoration: none;
   color: #232323;
 
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
+#menuToggle a:hover {
   color: 1ca5d4;
 }
 
-
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -182,8 +181,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /*
  * Just a quick hamburger
  */
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -197,18 +195,15 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
   transform-origin: 4px 0px;
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
@@ -216,8 +211,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
@@ -226,8 +220,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -235,8 +228,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -244,8 +236,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
+#menu {
   position: absolute;
   width: 100vw;
   margin: -100px 0 0 -50px;
@@ -260,11 +251,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   font-size: 22px;
 }
@@ -272,8 +262,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
@@ -291,7 +280,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   width: 80px;
 }
 
-
 /**Footer**/
 
 .footer {
@@ -308,14 +296,36 @@ body, p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-
 /**Homepage**/
 
 .otherLinks {
-  width: 80vw;
-  margin-left: 10vw;
-  text-align: center;
+  padding-top: 5vh;
+  width: 60vw;
+  margin-left: 20vw;
   margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  flex-wrap: wrap;
+}
+
+.welcomeText {
+  text-align: left;
+  min-width: 200px;
+  width: 30vw;
+}
+
+@media (max-width: 800px) {
+  .welcomeText {
+    text-align: center;
+  }
+}
+
+.welcomeImage img {
+  min-width: 200px;
+  width: 25vw;
+  height: auto;
 }
 
 .linkSection {
@@ -329,7 +339,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-left: 10vw;
   overflow-x: hidden;
   height: fit-content;
-
 }
 
 .sectionTitle {
@@ -372,7 +381,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
 }
 
-
 .about_header {
   font-size: 40px;
   text-align: center;
@@ -383,7 +391,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .about_header i {
   font-size: 20px;
 }
-
 
 .exec_container {
   width: 90vw;
@@ -431,15 +438,14 @@ body, p, h1, h2, h3, h4, h5, h6 {
   height: 275px;
   width: 275px;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: rgba(255, 255, 255, 0.6);
   align-items: center;
 }
 
 .people:hover .imgCaptionHover,
 .people:active .imgCaptionHover,
-.people:focus .imgCaptionHover
-{
+.people:focus .imgCaptionHover {
   opacity: 1;
 }
 
@@ -466,7 +472,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-.group_photo{
+.group_photo {
   padding-bottom: 50px;
   padding-top: 20px;
   text-align: center;
@@ -474,7 +480,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .constitution {
   width: 100vw;
-  text-align:center;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -500,8 +506,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   width: 50vw;
 }
 
-
-
 /**CPW Page**/
 
 .cpwContainer {
@@ -517,7 +521,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 
   overflow-x: hidden;
-
 }
 
 .cpw_container {
@@ -534,7 +537,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   z-index: 500;
 }
 
-.cpw_container iframe{
+.cpw_container iframe {
   margin: 20px;
   width: 100%;
 }
@@ -576,29 +579,29 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .events_widget {
-    width: 200px;
-    height: 200px;
-    background: #1ca5d4;
-    position: relative;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
+  width: 200px;
+  height: 200px;
+  background: #1ca5d4;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
 }
 
-.events_widget:before{
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 10px solid transparent;
-    border-right: 10px solid #1ca5d4;
-    border-top: 10px solid #1ca5d4;
-    border-bottom: 10px solid transparent;
-    right: 19px;
-    bottom: -19px;
+.events_widget:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #1ca5d4;
+  border-top: 10px solid #1ca5d4;
+  border-bottom: 10px solid transparent;
+  right: 19px;
+  bottom: -19px;
 }
 
-.events_widget strong{
+.events_widget strong {
   position: absolute;
   top: 0;
   left: 0;
@@ -608,7 +611,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
-.events_widget span{
+.events_widget span {
   font-size: 10em;
   position: absolute;
   bottom: 50px;
@@ -618,7 +621,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .events_info {
-  border:2px solid #1ca5d4;
+  border: 2px solid #1ca5d4;
   width: 196px;
   height: 300px;
   padding: 20px;
@@ -628,16 +631,16 @@ body, p, h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
 }
 
-.events_info strong{
+.events_info strong {
   font-size: 18px;
   line-height: 0.5;
 }
 
-.events_info span{
+.events_info span {
   font-style: italic;
 }
 
-.events_info p{
+.events_info p {
   font-size: 11px;
   line-height: 2;
 }
@@ -646,21 +649,21 @@ body, p, h1, h2, h3, h4, h5, h6 {
   background-color: gray;
 }
 
-.past_event:before{
+.past_event:before {
   border-right: 10px solid gray;
   border-top: 10px solid gray;
 }
 
 .past_info {
-  border:2px solid gray;
+  border: 2px solid gray;
   color: gray;
 }
 
-.past_info strong{
+.past_info strong {
   font-size: 18px;
 }
 
-.past_info p{
+.past_info p {
   font-size: 12px;
 }
 
@@ -674,8 +677,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text_event_box {
- width: 400px;
- text-align: left;
+  width: 400px;
+  text-align: left;
 }
 
 .event_box {
@@ -741,7 +744,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .mixerContainer {
   margin-top: 0;
   /* position: absolute; */
-  width:76vw;
+  width: 76vw;
   margin-left: 10vw;
   align-items: center;
   /* overflow-y: scroll; */
@@ -764,7 +767,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   width: 375px;
   object-fit: cover;
   margin-bottom: 40px;
-
 }
 
 .mixer_box_1 {
@@ -808,7 +810,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 hr {
   height: 1px;
-  border-width:0;
+  border-width: 0;
   color: #1ca5d4;
   background-color: #1ca5d4;
 }
@@ -816,7 +818,6 @@ hr {
 .mixer_form a:hover {
   color: black;
 }
-
 
 /** Contact Page **/
 
@@ -840,7 +841,7 @@ hr {
   height: 30px;
   width: 300px;
   margin-bottom: 20px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   padding: 4px;
 }
 
@@ -851,13 +852,13 @@ hr {
   height: 200px;
   width: 300px;
   padding: 4px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .contactContainer button {
   margin-top: 20px;
   border-radius: 10px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   width: 120px;
   height: 50px;
   outline: none;
