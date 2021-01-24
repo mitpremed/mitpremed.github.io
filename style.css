@@ -303,28 +303,28 @@ h6 {
   width: 60vw;
   margin-left: 20vw;
   margin-bottom: 5vh;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5vw;
+  gap: 5vw; */
   flex-wrap: wrap;
 }
 
 .welcomeText {
-  text-align: left;
-  min-width: 200px;
-  width: 30vw;
+  text-align: center;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .welcomeText {
     text-align: center;
   }
-}
+} */
 
 .welcomeImage img {
   min-width: 200px;
-  width: 25vw;
+  width: 50vw;
+  margin-left: 5vw;
+  padding-top: 5vh;
   height: auto;
 }
 
