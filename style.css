@@ -808,6 +808,16 @@ h6 {
   margin-bottom: 8vh;
 }
 
+@media (max-width: 800px) {
+  .mixer_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mixer_box_2 {
+    width: 76vw;
+  }
+}
+
 hr {
   height: 1px;
   border-width: 0;
@@ -828,16 +838,30 @@ hr {
 .mixer_speakers_container {
   margin-top: 70px;
   display: grid;
-  margin-left: calc(38vw - 400px);
+  width: 76vw;
+  align-items: center;
   grid-template-columns: 1fr;
 }
 
-.mixer_speaker {
-  display: grid;
-  grid-template-columns: 400px 400px;
-  gap: 50px;
-  align-items: center;
-  margin-bottom: 50px;
+@media (max-width: 1200px) {
+  .mixer_speaker {
+    width: 76vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mixer_speaker {
+    width: 60vw;
+    margin-left: 8vw;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .mixer_speaker p {
