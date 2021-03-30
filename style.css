@@ -849,47 +849,6 @@ hr {
   grid-template-columns: 1fr;
 }
 
-.mixer_speakers_container_2x2 {
-  margin-top: 70px;
-  display: grid;
-  width: 76vw;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
-  row-gap: 50px;
-  align-items: baseline;
-}
-
-@media (max-width: 1200px) {
-  .mixer_speaker_2x2 {
-    width: 76vw;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .mixer_speaker_2x2 {
-    max-width: 38vw;
-    /* margin-left: 8vw; */
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    /* gap: 25px; */
-    align-items: center;
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .mixer_speaker {
-    width: 76vw;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-}
-
 @media (min-width: 1200px) {
   .mixer_speaker {
     width: 60vw;
@@ -899,6 +858,50 @@ hr {
     gap: 25px;
     align-items: center;
     margin-bottom: 50px;
+  }
+  .mixer_speaker_2x2 {
+    max-width: 38vw;
+    /* margin-left: 8vw; */
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    /* gap: 25px; */
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .mixer_speakers_container_2x2 {
+    margin-top: 70px;
+    display: grid;
+    width: 76vw;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mixer_speaker {
+    width: 76vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .mixer_speaker_2x2 {
+    width: 76vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .mixer_speakers_container_2x2 {
+    margin-top: 70px;
+    display: grid;
+    width: 76vw;
+    align-items: center;
+    grid-template-columns: 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+    align-items: baseline;
   }
 }
 
