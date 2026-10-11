@@ -99,48 +99,6 @@ h6 {
   }
 }
 
-/**Dropdown**/
-
-.navLink-dropdown {
-  text-decoration: none;
-  color: black;
-  margin-left: 2vw;
-}
-
-.navLink-dropdown:hover {
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  margin-left: -3vw;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-/* Show the dropdown menu on hover */
-.navLink-dropdown:hover .dropdown-content {
-  display: block;
-  cursor: pointer;
-}
-
 /* Mobile navbar menu taken from Erik Terwan https://codepen.io/erikterwan/pen/EVzeRP */
 
 #menuToggle {
