@@ -8,9 +8,9 @@ Static website for the MIT Pre-Medical Society (premed.mit.edu; domain set in `C
 
 ## Architecture
 
-- Plain hand-written HTML pages at the repo root (`index`, `about-us`, `guide`, `events`, `contact`, plus per-event pages `cpw`, `dph-lite`, `mixer`, `jtm-panel`). `cpw_old.html` is an archived page that is not linked from the nav.
+- The five nav pages live at the repo root (`index`, `about-us`, `guide`, `events`, `contact`). The per-event pages are under `event-pages/` (`cpw`, `dph-lite`, `mixer`, `jtm-panel`, plus the archived `cpw_old`, which nothing links to); they aren't in the nav and are reached only via "More information" links on the Events calendar.
 - A single shared stylesheet, `style.css`. Fonts load from Google Fonts; icons come from the vendored `font-awesome-4.7.0/` (don't edit it). `index.html` additionally loads a Font Awesome kit script from a CDN for the newer icons (`fa-user-friends`, etc.).
-- Internal links omit the `.html` extension (`href="about-us"`), which relies on GitHub Pages' clean-URL resolution. Opening pages via `file://` will break those links; use a local server that resolves extensionless paths or add `.html` temporarily.
+- Internal links omit the `.html` extension (`href="about-us"`), which relies on GitHub Pages' clean-URL resolution. Opening pages via `file://` will break those links; use a local server that resolves extensionless paths or add `.html` temporarily. Root pages link each other with bare names (`href="events"`); pages in `event-pages/` must reach root assets and nav targets with a `../` prefix (`href="../style.css"`, `href="../events"`), and the calendar links into them with `href="event-pages/cpw"`.
 - Static assets: `assets/` (logo, banner, PDFs), `dphslides/` (DPH Lite slide PDFs), and `images/`: `officers/YYYY-YY/` (officer headshots by academic year), `panelists/YYYY/` (event speaker headshots), `events/` (per-event images), and `group-photos/YYYY/`. Some file names contain spaces, so quote paths.
 
 ## Things to know before editing
